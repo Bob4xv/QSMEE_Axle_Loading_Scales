@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "Solar Powered Wheel Scales"
 Date "2019-09-27"
-Rev "1.0"
+Rev "1.01"
 Comp "QSMEE"
 Comment1 "QSMEE Solar Powered Wheel Loading Scales"
 Comment2 ""
@@ -26,7 +26,7 @@ F 3 "~" V 795 2420 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor:Load_cell U1
+L QsmeeScales-rescue:Load_cell-Sensor U1
 U 1 1 5D955F8C
 P 10195 4255
 F 0 "U1" H 10790 4345 50  0000 L CNN
@@ -37,7 +37,7 @@ F 3 "http://www.robotshop.com/media/files/pdf/datasheet-3134.pdf" H 10195 3455 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor:Load_cell U2
+L QsmeeScales-rescue:Load_cell-Sensor U2
 U 1 1 5D957F51
 P 10195 5685
 F 0 "U2" H 10800 5750 50  0000 L CNN
@@ -70,7 +70,7 @@ Wire Notes Line
 Wire Notes Line
 	2510 2720 2510 2220
 Text Notes 2540 2485 0    25   ~ 0
-LiPo Ballance\nCharger
+LiPo 2S Ballance\nCharger
 Wire Notes Line
 	4450 6270 3750 6270
 Wire Notes Line
@@ -516,7 +516,7 @@ $Comp
 L Connector:Conn_01x01_Male J2
 U 1 1 5DC7EDBC
 P 1435 2270
-F 0 "J2" H 1390 2285 50  0000 R CNN
+F 0 "J2" H 1420 2275 25  0000 R CNN
 F 1 "In+" H 1500 2355 50  0000 R CNN
 F 2 "" H 1435 2270 50  0001 C CNN
 F 3 "~" H 1435 2270 50  0001 C CNN
@@ -527,7 +527,7 @@ $Comp
 L Connector:Conn_01x01_Male J1
 U 1 1 5DC800D8
 P 1430 2495
-F 0 "J1" H 1405 2495 50  0000 R CNN
+F 0 "J1" H 1415 2495 25  0000 R CNN
 F 1 "In-" H 1495 2450 50  0000 R CNN
 F 2 "" H 1430 2495 50  0001 C CNN
 F 3 "~" H 1430 2495 50  0001 C CNN
@@ -538,7 +538,7 @@ $Comp
 L Connector:Conn_01x01_Male J3
 U 1 1 5DC816A3
 P 1765 2270
-F 0 "J3" H 1690 2275 50  0000 C CNN
+F 0 "J3" H 1725 2270 25  0000 C CNN
 F 1 "Out+" H 1725 2350 50  0000 C CNN
 F 2 "" H 1765 2270 50  0001 C CNN
 F 3 "~" H 1765 2270 50  0001 C CNN
@@ -549,7 +549,7 @@ $Comp
 L Connector:Conn_01x01_Male J4
 U 1 1 5DC82563
 P 1765 2495
-F 0 "J4" H 1685 2530 50  0000 C CNN
+F 0 "J4" H 1725 2495 25  0000 C CNN
 F 1 "Out-" H 1720 2440 50  0000 C CNN
 F 2 "" H 1765 2495 50  0001 C CNN
 F 3 "~" H 1765 2495 50  0001 C CNN
@@ -560,7 +560,7 @@ $Comp
 L Connector:Conn_01x01_Male J5
 U 1 1 5DC82F38
 P 2575 2330
-F 0 "J5" H 2500 2360 50  0000 R CNN
+F 0 "J5" H 2565 2335 25  0000 R CNN
 F 1 "P+" H 2630 2395 50  0000 R CNN
 F 2 "" H 2575 2330 50  0001 C CNN
 F 3 "~" H 2575 2330 50  0001 C CNN
@@ -571,7 +571,7 @@ $Comp
 L Connector:Conn_01x01_Male J6
 U 1 1 5DC84027
 P 2585 2585
-F 0 "J6" H 2520 2620 50  0000 R CNN
+F 0 "J6" H 2570 2585 25  0000 R CNN
 F 1 "P-" H 2635 2530 50  0000 R CNN
 F 2 "" H 2585 2585 50  0001 C CNN
 F 3 "~" H 2585 2585 50  0001 C CNN
@@ -582,7 +582,7 @@ $Comp
 L Connector:Conn_01x01_Male J7
 U 1 1 5DC84AD6
 P 2930 2325
-F 0 "J7" H 2850 2335 50  0000 C CNN
+F 0 "J7" H 2890 2325 25  0000 C CNN
 F 1 "B+" H 2940 2385 50  0000 C CNN
 F 2 "" H 2930 2325 50  0001 C CNN
 F 3 "~" H 2930 2325 50  0001 C CNN
@@ -593,7 +593,7 @@ $Comp
 L Connector:Conn_01x01_Male J9
 U 1 1 5DC85523
 P 2945 2605
-F 0 "J9" H 2870 2620 50  0000 C CNN
+F 0 "J9" H 2910 2610 25  0000 C CNN
 F 1 "B-" H 2940 2555 50  0000 C CNN
 F 2 "" H 2945 2605 50  0001 C CNN
 F 3 "~" H 2945 2605 50  0001 C CNN
@@ -604,7 +604,7 @@ $Comp
 L Connector:Conn_01x01_Male J8
 U 1 1 5DC86347
 P 2940 2480
-F 0 "J8" H 2860 2545 50  0000 C CNN
+F 0 "J8" H 2935 2510 25  0000 C CNN
 F 1 "BM" H 2865 2475 50  0000 C CNN
 F 2 "" H 2940 2480 50  0001 C CNN
 F 3 "~" H 2940 2480 50  0001 C CNN
